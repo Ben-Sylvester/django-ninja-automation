@@ -8,14 +8,13 @@ Auto-wires everything a real API needs — auth, envelopes, pagination, DI, rate
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Django 4.2+](https://img.shields.io/badge/django-4.2+-green.svg)](https://djangoproject.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Tests](https://github.com/bensylvenus/django-ninja-boost/actions/workflows/test.yml/badge.svg)](https://github.com/bensylvenus/django-ninja-boost/actions)
+
 
 ---
 
 ## Table of Contents
 
 - [What is this?](#what-is-this)
-- [Why "Boost" and not "Auto"?](#why-boost-and-not-auto)
 - [The problem it solves](#the-problem-it-solves)
 - [Feature overview](#feature-overview)
 - [Installation](#installation)
@@ -100,20 +99,6 @@ router = AutoRouter(tags=["Users"])
 def list_users(request, ctx):
     return User.objects.all()   # paginated, enveloped, and auth-gated automatically
 ```
-
----
-
-## Why "Boost" and not "Auto"?
-
-| Name | Problem |
-|------|---------|
-| `django-ninja-auto` | "Auto" implies magic you can't control; sounds like it replaces your architecture. |
-| `django-ninja-boost` | Honest: it makes your existing Django Ninja code faster and more powerful. You add rocket fuel — you still steer the rocket. |
-| `django-ninja-plus` | Generic — every "plus" package sounds the same in search results. |
-| `django-ninja-ext` | Sounds like an afterthought extension, not a first-class layer. |
-| `django-ninja-kit` | A "kit" implies manual assembly; Boost is pre-assembled. |
-
-**Verdict:** `django-ninja-boost` wins — memorable, honest, differentiates well in `pip search ninja` results.
 
 ---
 
